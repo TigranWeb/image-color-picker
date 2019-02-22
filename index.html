@@ -12,11 +12,21 @@
 
 <body>
     <header class="cp-header">
-        Image Picker
+       <div>COLORS</div>
+       <div id="cp-colors">
+
+       </div> 
     </header>
     <main class="sp-main">
         <section class="cp-color-data">
             color data
+            <div class="cp-color-active">
+                <div id="current-color" class="cp-color-current"></div>
+                <div class="cp-color-active-value">
+                    <p>RGB <span id="current-rgb"></span> </p>
+                    <p>HEX <span id="current-hex"></span> </p>
+                </div>
+            </div>
         </section>
         <section class="cp-image-section">
             <div class="cp-image-controller">

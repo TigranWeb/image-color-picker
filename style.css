@@ -17,7 +17,7 @@ body {
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
 }
@@ -44,6 +44,20 @@ body {
     min-width: 200px;
     background-color: #ccc;
 }
+.cp-color-active{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+}
+.cp-color-active-value{
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.cp-color-current{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+}
 
 /* image section */
 .cp-image-controller {
@@ -67,12 +81,18 @@ body {
 }
 
 .cp-image-section {
-    width: 100%;
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 .cp-image-canvas{
     width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
     flex: 1;
+    overflow: hidden;
+}
+.cp-image-canvas > canvas{
+    display: block;
 }
